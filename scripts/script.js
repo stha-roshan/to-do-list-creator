@@ -12,11 +12,10 @@ add.addEventListener("click", () => {
   inputValue.value = "";
 });
 
-
 taskList.addEventListener("click", (event) => {
-    const getItem = event.target.tagName; 
-    getItem.toLowerCase();
-    if(getItem === "button"){
-        taskList.removeChild(divElement);
-    }
-})
+  const getItem = event.target.tagName;
+  getItem.toLowerCase();
+  if (getItem === "button") {
+    taskList.removeChild(divElement);
+  }
+});
