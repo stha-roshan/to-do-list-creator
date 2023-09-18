@@ -13,9 +13,13 @@ add.addEventListener("click", () => {
 });
 
 taskList.addEventListener("click", (event) => {
-  const getItem = event.target.tagName;
-  getItem.toLowerCase();
-  if (getItem === "button") {
-    taskList.removeChild(divElement);
+  let tagname = event.target.tagName;
+
+  if (tagname.toLowerCase() === "button") {
+    const parentDiv = event.target.closest(".content");
+
+    if (parentDiv) {
+      taskList.removeChild(parentDiv);
+    }
   }
 });
