@@ -1,41 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
-  </head>
 
-  <body>
-    <div id="container">
-      <div id="addTask-box">
-        <div id="addTask">
-          <div>
-            <span>To-Do List <img class="img" src="/img-resources/to-do-list.png" alt=""></span>
-            <div id="dateContainer">
-              <span>Date : </span>
-              <input type="date" />
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="container">
+    <div id="addTask-box">
+      <div id="addTask">
+        <div>
+          <span>To-Do List
+            <img class="img" src="/img-resources/to-do-list.png" alt="" /></span>
+          <div id="dateContainer">
+            <span>Date : </span>
+            <input id="date" type="date" />
           </div>
-          <div id="task-input-container">
-            <input type="text" id="textInput" />
-            <button class="btn" id="add">Add</button>
-            <button class="btn">Save</button>
-          </div>
-          <div class="task-list">
-            <!-- <div class="content">
+        </div>
+        <div id="task-input-container">
+          <input type="text" id="textInput" />
+          <button class="btn" id="add">Add</button>
+          <button class="btn" id="save">Save</button>
+        </div>
+        <div class="task-list">
+          <!-- <div class="content">
                         <p>do java script projects and make portfolio</p>
                         <button>X</button>
                     </div> -->
-          </div>
         </div>
       </div>
     </div>
 
-    <script src="/scripts/script.js"></script>
-  </body>
+    <div id="savedToDo">
+
+        <!-- whole content box -->
+
+      <!-- <div class="savedItem">
+
+        <div>
+          <span>To-Do List
+            <img class="img" src="/img-resources/to-do-list.png" alt="" /></span>
+        </div>
+              <!-- Date -->
+        <!-- <div id="showSavedDate">
+          <span>Date : </span>
+          <span id="placeDate">2005-05-22</span>
+        </div> -->
+
+             <!-- content box -->
+
+        <!-- <div class="savedContent">
+          <label for="myCheckbox" class="custom-checkbox">
+            <input type="checkbox" id="myCheckbox">
+          </label>
+          <p>do java script projects and make portfolio Lorem ipsd dolor sit amet consectetur adipisicing elit. Ipsum
+            quas quisquam adipisci laboriosam repudiandae, placeat est maxime corporis unde. Pariatur.</p>
+        </div>
+
+      </div> --> 
+
+
+    </div>
+  </div>
+  </div>
+
+  <script src="/scripts/script.js"></script>
+</body>
+
 </html>

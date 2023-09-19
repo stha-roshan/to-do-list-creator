@@ -4,7 +4,7 @@
 }
 
 #addTask-box {
-  /* background-color: aqua; */
+  background-color: aqua;
   padding: 30px 0px;
   height: auto;
   display: grid;
@@ -129,6 +129,76 @@ input[type="text"] {
   border-radius: 5px;
   font-size: 16px;
   outline: none;
+}
+
+.savedToDo{
+  height: auto;
+  padding: 20px 20px;
+  background-color: #2d459b;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.savedItem{
+  margin:50px 10px;
+  padding: 8px 20px;
+  border-radius: 20px;
+  height: auto;
+  width: 30vw;
+  background-color: aliceblue;
+}
+
+.savedItem > div:first-child{
+  margin: 2px;
+  text-align: center;
+  background-color: blueviolet;
+  font-size: 30px;
+  padding: 10px 0px;
+
+} 
+
+#showSavedDate{
+  margin: 2px;
+  font-size: 25px;
+  background-color: bisque;
+  padding: 10px 0px;
+}
+
+.savedContent{
+  height: auto;
+  padding: 10px 10px;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: width 0.3s ease-in-out;
+}
+
+.savedContent:hover {
+  border: 1px solid #ccc;
+}
+
+.custom-checkbox {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  outline: none;
+  background: none;
+  width: 24px;
+  height: 24px;
 }
 
 /* @media (min-width: 1024px) {
