@@ -10,6 +10,7 @@ add.addEventListener("click", () => {
   taskList.appendChild(divElement);
 
   inputValue.value = "";
+  inputValue.focus();
 });
 
 taskList.addEventListener("click", (event) => {
