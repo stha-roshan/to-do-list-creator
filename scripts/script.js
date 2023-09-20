@@ -6,7 +6,6 @@ const taskListArray = [];
 add.addEventListener("click", () => {
   const realValue = inputValue.value;
 
-  
   taskListArray.push(realValue);
   console.log(taskListArray);
 
@@ -17,7 +16,6 @@ add.addEventListener("click", () => {
 
   inputValue.value = "";
   inputValue.focus();
-
 });
 
 taskList.addEventListener("click", (event) => {
@@ -37,26 +35,32 @@ const date = document.getElementById("date");
 const savedToDoBox = document.getElementById("savedToDo");
 
 save.addEventListener("click", () => {
-const savedItemDiv = document.createElement("div");
-savedItemDiv.classList.add("savedItem");
-savedItemDiv.innerHTML = `<div>
-<span>To-Do List
-  <img class="img" src="/img-resources/to-do-list.png" alt="" /></span>
+  const newDiv = document.createElement("div");
+  newDiv.classList.add("savedItem");
+  newDiv.innerHTML = `
+  <div>
+  <span>To-Do List
+    <img class="img" src="/img-resources/to-do-list.png" alt="" /></span>
 </div>
-    <!-- Date -->
+
 <div id="showSavedDate">
-<span>Date : </span>
-<span id="placeDate">${date.value}</span>
+  <span>Date : </span>
+  <span id="placeDate">2005-05-22</span>
 </div>
+`;
 
-   <!-- content box -->
+  for (let i = 0; i < taskListArray.length; i++) {
+    const savedContent = document.createElement("div");
+    savedContent.classList.add("savedContent");
+    savedContent.innerHTML = `
+  <label for="myCheckbox" class="custom-checkbox">
+   <input type="checkbox" id="myCheckbox">
+  </label>
+   <p>${taskListArray[i]} </p>`;
+    newDiv.appendChild(savedContent);
+  }
 
-<div class="savedContent">
-<label for="myCheckbox" class="custom-checkbox">
-  <input type="checkbox" id="myCheckbox">
-</label>
-<p>random remove it</p>
-</div>`;
-
-savedToDoBox.appendChild(savedItemDiv);
+  savedToDoBox.appendChild(newDiv);
 });
+
+taskListArray = [];

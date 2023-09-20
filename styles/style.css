@@ -4,7 +4,7 @@
 }
 
 #addTask-box {
-  background-color: aqua;
+  /* background-color: aqua; */
   padding: 30px 0px;
   height: auto;
   display: grid;
@@ -29,7 +29,7 @@
   margin: 0px 10px;
 }
 
-.img{
+.img {
   height: 35px;
 }
 
@@ -40,7 +40,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: 'Mooli', sans-serif;
+  font-family: "Mooli", sans-serif;
   font-size: 30px;
   font-weight: 600;
   color: #2d459b;
@@ -131,17 +131,18 @@ input[type="text"] {
   outline: none;
 }
 
-.savedToDo{
+#savedToDo {
   height: auto;
   padding: 20px 20px;
-  background-color: #2d459b;
+  /* background-color: #2d459b; */
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.savedItem{
-  margin:50px 10px;
+.savedItem {
+  margin: 50px 10px;
   padding: 8px 20px;
   border-radius: 20px;
   height: auto;
@@ -149,23 +150,22 @@ input[type="text"] {
   background-color: aliceblue;
 }
 
-.savedItem > div:first-child{
+.savedItem > div:first-child {
   margin: 2px;
   text-align: center;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   font-size: 30px;
-  padding: 10px 0px;
-
-} 
-
-#showSavedDate{
-  margin: 2px;
-  font-size: 25px;
-  background-color: bisque;
   padding: 10px 0px;
 }
 
-.savedContent{
+#showSavedDate {
+  margin: 2px;
+  font-size: 25px;
+  /* background-color: bisque; */
+  padding: 10px 0px;
+}
+
+.savedContent {
   height: auto;
   padding: 10px 10px;
   margin: 10px 0px;
