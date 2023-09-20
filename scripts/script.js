@@ -61,6 +61,8 @@ save.addEventListener("click", () => {
   }
 
   savedToDoBox.appendChild(newDiv);
+
+  taskListArray.length = 0;
 });
 
-taskListArray = [];
+
