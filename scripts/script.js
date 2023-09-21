@@ -45,7 +45,7 @@ save.addEventListener("click", () => {
 
 <div id="showSavedDate">
   <span>Date : </span>
-  <span id="placeDate">2005-05-22</span>
+  <span id="placeDate">${date.value}</span>
 </div>
 `;
 
@@ -63,6 +63,7 @@ save.addEventListener("click", () => {
   savedToDoBox.appendChild(newDiv);
 
   taskListArray.length = 0;
+  taskList.innerHTML = "";
 });
 
 
